@@ -89,7 +89,8 @@ button {
     background-color: rgb(255, 246, 229);
 }
 .btn_accept:focus {     
-    background-color:rgb(249, 138, 223);    
+    background-color:rgb(0, 60, 255);
+    color: rgb(255, 176, 29);    
 }
 
 .btn_decline {
