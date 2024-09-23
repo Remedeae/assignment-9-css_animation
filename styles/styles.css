@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(92, 60, 1);
+}
+h1, h2, h3, h6 {
+    font-family: "Great Vibes", cursive;
+}
+h2 {
+    font-size: 100px;
+    font-weight: 400;
+}
+h3 {
+    padding: 0 6px;
+}
+h1 {
+    font-weight: 400;
+    font-size: 250px;
+    font-style: normal;
+    margin: 0 30px;
+}
+h6 {
+    font-weight: 400;
+    font-size: 50px;
+    padding-top: 50px;
+}
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    max-width: 570px;
+    width: 100%;
+    min-height: 850px;
+    background-image: url(../images/royal_bakground_white.jfif);
+    background-repeat: no-repeat;
+}
+.invitation {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.invite-you {
+    display: flex;
+    padding-left: 50px;
+}
+.age {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin: -50px 0;
+    max-width: 500px;
+    width: 100%;
+    height: 300px;
+}
+.age > div {
+    margin-top: -50px;
+}
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    margin: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    width: 120px;
+    color: rgb(92, 60, 1);
+    background-color: rgb(194, 177, 146);
+    border-color: rgb(92, 60, 1);
+    border-radius: 10px;
+} 
+.btn_accept:hover {
+    animation: acceptHover 1s infinite;
+}
+@keyframes acceptHover {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+.btn_accept:active {
+    background-color: rgb(255, 246, 229);
+}
+.btn_accept:focus {     
+    background-color:rgb(249, 138, 223);    
+}
+
+.btn_decline {
+    color: rgb(73, 73, 73);
+    background-color: rgb(192, 192, 192);
+    border-color: rgb(73,73,73);
+}
+.btn_decline:hover {
+    color: red;
+    background-color: black;
+    transition: all 1s ease-in-out;
+    -o-transition-delay: 0.2s;
+}
+.btn_decline:focus {
+ animation: declineClick 0.6s;
+ animation-iteration-count: 1;
+ color: red;
+ background-color: black;
+}
+@keyframes declineClick{
+    0% {transform: rotate(0deg)}
+    20% {transform: rotate(5deg)}
+    40% {transform: rotate(-5deg)}
+    60% {transform: rotate(5deg)}
+    80% {transform: rotate(-5deg)}
+    100% {transform: rotate(0deg)}
+}
